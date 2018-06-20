@@ -48,6 +48,40 @@ public class SavepointDemo {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
+		finally {
+			if(statement3 != null) {
+				try {
+					statement3.close();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(statement2 != null) {
+				try {
+					statement2.close();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(statement1 != null) {
+				try {
+					statement1.close();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(connection != null) {
+				try {
+					connection.close();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 
 }

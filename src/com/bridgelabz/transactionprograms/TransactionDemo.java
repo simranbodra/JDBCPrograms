@@ -1,3 +1,4 @@
+
 package com.bridgelabz.transactionprograms;
 
 import java.sql.Connection;
@@ -41,7 +42,32 @@ public class TransactionDemo {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
-		
+		finally {
+			if(statement2 != null) {
+				try {
+					statement2.close();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(statement1 != null) {
+				try {
+					statement1.close();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(connection != null) {
+				try {
+					connection.close();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
 		
 	}
 
