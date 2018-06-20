@@ -43,7 +43,24 @@ public class BatchUpdate {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
-
+		finally {
+			if(statement != null) {
+				try {
+					statement.close();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if(connection != null) {
+				try {
+					connection.close();
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 
 }
