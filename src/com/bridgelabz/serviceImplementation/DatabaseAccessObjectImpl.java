@@ -7,8 +7,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import com.bridgelabz.model.User;
+import com.bridgelabz.service.DatabaseAccessObject;
 
-public class DatabaseAccessObject {
+public class DatabaseAccessObjectImpl implements DatabaseAccessObject{
 
 	Connection connection = null;
 	Statement statement = null;

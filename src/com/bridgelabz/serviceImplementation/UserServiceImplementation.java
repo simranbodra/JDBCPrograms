@@ -6,7 +6,7 @@ import com.bridgelabz.utility.Utility;
 
 public class UserServiceImplementation implements UserService {
 	
-	DatabaseAccessObject object = new DatabaseAccessObject();
+	DatabaseAccessObjectImpl object = new DatabaseAccessObjectImpl();
 
 	/**
 	 * Function for login 
