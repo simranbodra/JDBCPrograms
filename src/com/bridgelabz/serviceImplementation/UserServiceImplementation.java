@@ -6,8 +6,6 @@ import com.bridgelabz.utility.Utility;
 
 public class UserServiceImplementation implements UserService{
 	
-	DatabaseAccessObject object = new DatabaseAccessObject();
-
 	/**
 	 * Function for login
 	 * @param emailId
@@ -15,6 +13,7 @@ public class UserServiceImplementation implements UserService{
 	 */
 	@Override
 	public void login(String emailId, String password) {
+		DatabaseAccessObjectImpl object = new DatabaseAccessObjectImpl();
 		object.getDatabaseAccess();
 		User user = object.checkUserInDatabase(emailId);
 		if(user == null) {
@@ -41,6 +40,7 @@ public class UserServiceImplementation implements UserService{
 	 */
 	@Override
 	public void register(String email) {
+		DatabaseAccessObjectImpl object = new DatabaseAccessObjectImpl();
 		object.getDatabaseAccess();
 		User user = object.checkUserInDatabase(email);
 		if(user != null) {
