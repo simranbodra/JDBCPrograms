@@ -1,0 +1,26 @@
+{
+	"addressBook": [
+		{
+			"firstName": "Simran",
+			"lastName": "Bodra",
+			"address": "Sakchi",
+			"city": "Jamshedpur",
+			"state": "Jharkhand",
+			"zipCode": "831001",
+			"phoneNumber": "9939620336",
+			"status": "NOCHANGE"
+		},
+		{
+			"firstName": "Aditya",
+			"lastName": "Sen",
+			"address": "Sihora",
+			"city": "Jabalpur",
+			"state": "Madhya Pradesh",
+			"zipCode": "789456",
+			"phoneNumber": "9713861640",
+			"status": "NOCHANGE"
+		}
+	],
+	"addressBookName": "Friends",
+	"count": 2
+}
